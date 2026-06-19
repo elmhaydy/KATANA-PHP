@@ -1,6 +1,6 @@
-# Mini e-Commerce
+# KATANA-PHP
 
-Mini boutique e-commerce en PHP/MySQL autour d'un catalogue de katanas, avec panier, authentification, passage de commande et espace d'administration.
+Mini e-Commerce est une boutique en ligne developpee en PHP et MySQL, dediee a la vente de katanas et d'accessoires. Le projet permet de consulter un catalogue, ajouter des produits au panier, se connecter, passer des commandes et gerer un espace d'administration pour les produits et les commandes.
 
 ## Fonctionnalites
 
@@ -47,12 +47,12 @@ mini-ecommerce/
 
 2. Demarre `Apache` et `MySQL`.
 
-3. Cree la base de donnees en important [sql/schema.sql](/C:/Users/elmeh/OneDrive/Bureau/mini-ecommerce/sql/schema.sql).
+3. Cree la base de donnees en important `sql/schema.sql`.
    Exemple via phpMyAdmin :
    - cree ou remplace la base `mini_ecommerce`
    - importe le fichier `sql/schema.sql`
 
-4. Verifie la configuration MySQL dans [php/includes/db.php](/C:/Users/elmeh/OneDrive/Bureau/mini-ecommerce/php/includes/db.php:1).
+4. Verifie la configuration MySQL dans `php/includes/db.php`.
 
 ```php
 $DB_HOST = "127.0.0.1";
@@ -62,7 +62,7 @@ $DB_PASS = "";
 ```
 
 5. Si tu veux tester les e-mails, lance MailHog sur `127.0.0.1:1025`.
-   Le projet tente d'envoyer les messages via [php/includes/mail.php](/C:/Users/elmeh/OneDrive/Bureau/mini-ecommerce/php/includes/mail.php:1).
+   Le projet tente d'envoyer les messages via `php/includes/mail.php`.
 
 ## URL a ouvrir
 
@@ -82,7 +82,7 @@ Le schema SQL ajoute des utilisateurs de demo.
 
 ## Base de donnees
 
-Le fichier [sql/schema.sql](/C:/Users/elmeh/OneDrive/Bureau/mini-ecommerce/sql/schema.sql) cree :
+Le fichier `sql/schema.sql` cree :
 
 - `users`
 - `products`
@@ -114,7 +114,3 @@ MAILER_DSN=smtp://localhost:1025
 2. Connecte-toi avec `admin@katana.test`
 3. Va sur `http://localhost/mini-ecommerce/php/admin/products.php`
 4. Passe une commande avec un compte utilisateur pour verifier le flux panier -> checkout -> commande
-
-## Auteur
-
-Projet mini e-commerce PHP/MySQL pour demonstration ou soutenance.
